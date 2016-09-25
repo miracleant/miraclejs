@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播器</title>
+	<style type="text/css">
+		#image{
+			margin-left: 580px;
+			width: 700px;
+			height:700px;
+		}
+		#left{
+			width:50px;
+			height: 50px;
+			margin-top: 320px;
+			margin-left:-702px; 
+			position:absolute;
+		}
+		#right{
+			width:50px;
+			height: 50px;
+			margin-top: 320px;
+			margin-left:-48px; 
+			position:absolute;
+		}
+	</style>
+	<script type="text/javascript">
+	var imgArray=new Array();
+		var objArray=new Array("01.jpg","02.jpg","03.jpg","04.jpg");
+		for(var i=0;i<objArray.length;i++){
+			imgArray[i]=new Image();
+			imgArray[i].src=objArray[i];
+		}
+		
+		var j=0;
+		//下面这段代码用不了
+		/**window.onload=function changeImg(){
+			var imgArray=new Array();
+		var objArray=new Array("01.jpg","02.jpg","03.jpg","04.jpg");
+		for(var i=0;i<objArray.length;i++){
+			imgArray[i]=new Image();
+			imgArray[i].src=objArray[i];
+		}
+		
+		var j=0;
+			if(j==3){
+				j=0;
+				document.images[0].src =imgArray[j].src;
+				j++;
+			}else{
+				document.images[0].src =imgArray[j].src;
+			}
+			//SetInterval(1000, changeImg);
+			setTimeout(function(){
+				if(j==3){
+					j=0;
+					document.images[0].src =imgArray[j].src;
+					j++;
+				}else{
+					document.images[0].src =imgArray[j].src;
+				}	
+			},1000);
+
+		}
+		*/
+
+		function left(){
+				if(j==0){
+					j=4;
+					j--;
+					//document.images[0].src=imgArray[j].src;
+					document.getElementById("image").src=imgArray[j].src;
+					
+				}else{
+					j--;
+					//document.images[0].src=imgArray[j].src;
+					document.getElementById("image").src=imgArray[j].src;
+					
+				}
+				//setTimeout("right()",5000);
+		}
+		
+		function right(){
+			if(j==3){
+				j=-1;
+				j++;
+				document.images[0].src=imgArray[j].src;
+				
+			}else{
+				j++;
+				document.images[0].src=imgArray[j].src;
+			}
+			//setTimeout("right()",5000);
+		}
+	</script>
+</head>
+<!--<body onload="JavaScript:right()">-->
+<body>
+	<h3 align="center">轮播器</h3>
+	<div id="img">
+		<img  id="image" name="oImage"  src="01.jpg">
+			<button id="left" onClick="JavaScript:left()"><img style="width:30px; height: 30px;"	src="left.png"></button>
+			<button id="right" onClick="JavaScript:right()"><img style="width:30px; height: 30px;" src="right.png" ></button>
+		</img>
+	</div>
+	
+</body>
+</html>
