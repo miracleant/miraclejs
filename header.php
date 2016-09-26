@@ -3,6 +3,7 @@
 <head>
 	<title>miraclejs</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
 </head>
 <body>
 	<header>
