@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/content.css">
 </head>
-<body>
+ <body id="mireclejs">
 	<header>
 		<div class="mj-header-logo">miraclejs</div>
 		<ul>
@@ -13,9 +13,9 @@
 			<li><a href="">sidebar</a></li>
 			<li onmouseover="menushow(this)" onmouseout="menuhidden(this)"><a href="">content</a>
 				<ul>
-					<li><a href="">circleplay</a></li>
-					<li><a href="">marquee</a></li>
-					<li><a href="">listmenu</a></li>
+					<li><a href="#mj-circle-play">circleplay</a></li>
+					<li><a href="#mj-marquee">marquee</a></li>
+					<li><a href="#mj-tab-menu">listmenu</a></li>
 				</ul>
 			</li>
 			<li><a href="">footer</a></li>

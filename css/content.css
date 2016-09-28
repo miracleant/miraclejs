@@ -1,7 +1,7 @@
 /*content set*/
 #mj-content{
 	position: relative;
-	background: green;
+	background: white;
 	margin-top: 20px;
 	width: 940px;
 	height: 1600px;
@@ -89,7 +89,7 @@
 	background: gray;
 	border:1px solid #eee;
 	width: 600px;
-	height: 240px;
+	height: 200px;
 }
 .mj-list-tit>ul{
 	float: left;
@@ -106,7 +106,7 @@
 	width: 119px;
 	height: 40px;
 }
-.mj-list-tit ul li:hover{
+.mj-list-tit ul li.select{
 	background: #fff;
 	border-bottom: 1px solid #fff;
 }
@@ -116,7 +116,7 @@
 	width: 600px;
 	height: 200px;
 }
-.mj-list-mod ul li{
+.mj-list-mod ul li a{
 	float: left;
 	text-align: left;
 	line-height: 80px;
@@ -124,12 +124,25 @@
 	height: 80px;
 }
 .mj-page-review{
-	margin: 10px;
+	position: relative;
+	margin:10px;
 	background: gray;
 	width: 660px;
+	height: 230px;
+}
+.mj-page-review img{
+	float: left;
+	margin-top:10px;
+	margin-left: 8px;
+	width: 100px;
+	height: 100px;
+}
+#mj-img-tip img{
+	position: relative;
+	top:-105px;
+	width: 200px;
 	height: 200px;
 }
-
 /*content bottom set*/
 .mj-content-bottom{
 	float: left;
@@ -137,7 +150,7 @@
 	height: 800px;
 }
 .mj-video-play{
-	background: gray;
+	/* background: gray; */
 	margin:10px auto;
 	width: 680px;
 	height: 320px;
@@ -147,4 +160,23 @@
 	margin: 0 20px;
 	width: 900px;
 	height: 460px;
+}
+.mj-video-play .mj-ui-play{
+    background:none repeat scroll 0 0 #333;
+    border:3px solid #333;
+    border-radius:5px 5px 5px 5px;
+    box-shadow:3px 3px 3px #111;
+    height;100px;
+    padding:10px 20px 10px 10px;
+    width:100px;
+    position:absolute;
+    cursor:pointer;
+}
+.mj-video-play  .mj-ui-play span{
+    border-bottom:50px solid transparent;
+    border-left:60px solid #fff;
+    border-top:50px solid transparent;
+    display:inline-block;
+    height:0;
+    margin-left:41px;
 }
