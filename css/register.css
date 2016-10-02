@@ -1,0 +1,56 @@
+.mj-register{
+	position: relative;
+	background: white;
+	margin:20px auto;
+	width: 500px;
+	height: 600px;
+}
+.mj-reg-tit{
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 210px;
+	clear: both;
+	color: rgba(255, 0, 0, 0.69);
+}
+.mj-reg-form{
+	float: left;
+	margin: auto;
+	position: absolute;
+	top: 80px;
+	left: 50px;
+}
+.mj-reg-form label{
+	margin: 2px 0px;
+	float: left;
+	font-size: 18px;
+}
+.mj-reg-form input{
+	line-height: 20px;
+	height:30px;
+	width: 280px;
+	font-size: 16px;
+	border: #ebebeb 1px solid;
+	text-indent: 5px;
+}
+.mj-reg-select{
+	font-size: 18px;
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+.mj-reg-select form{
+	margin-bottom: 10px;
+}
+.mj-reg-select button{
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	line-height: 30px;
+	background: rgba(128, 128, 128, 0.3);
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+	margin-left: 70px;
+	font-size: 18px;
+	width: 70px;
+	height: 30px;
+}

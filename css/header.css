@@ -7,7 +7,6 @@ body{
 	margin: auto;
 	background: #d6d5d5;
 	position: relative;
-	/* background: #9e9e9e; */
 }
 a{
 	text-decoration: none;
@@ -55,29 +54,30 @@ header ul li a{
 	font-size: 20px;
 }
 header ul  li  ul{
+	position: absolute;
 	display: none;
 	z-index: 80;
-	position: absolute;
-	top: 35px;
-	left: 245px;
+	top: 33px;
+	left: 240px;
 }
 header ul li:hover{
 	background: #756a6a;
 }
-/*header ul li:hover ul{
-	display: block;
-}*/
+header ul li:hover ul{
+	display: table;
+	display: inline;
+}
+
 .mj-header-login{
 	font-family: "sans-serif";
-	position: relative;
-	top: 10px;
-	right: -480px;
-	font-size: 20px;
-	color: blue;
+    position: absolute;
+    float: left;
+    top: 10px;
+    right: 40px;
+    font-size: 20px;
+    color: blue;
 }
 /*header set end*/
-
-
 
 /*login set*/
 .mj-login{
@@ -158,7 +158,6 @@ header ul li:hover{
 	display: none;
 	top: 0px;
 	z-index: 888;
-	/*background: gray;*/
 	width: 940px;
 	height: 650px;
 }

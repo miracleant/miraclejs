@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>register</title>
+	<title>miraclejs</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
-<body>
-	it's register page!
+ <body id="mireclejs">
+	<header>
+		<div class="mj-header-logo">miraclejs</div>
+		<ul>                                                            
+			<li><a href="index.php">header</a></li>
+			<li><a href="#sidebar">sidebar</a></li>
+			<li onmouseover="menushow(this)" onmouseout="menuhidden(this)"><a href="#">content</a>
+				<ul>
+					<li><a href="#mj-img-review">imgreview</a></li>
+					<li><a href="#mj-marquee">marquee</a></li>
+					<li><a href="#mj-tab-menu">listmenu</a></li>
+				</ul>
+			</li>
+			<li><a href="#footer">footer</a></li>
+		</ul>
+		<div class="mj-header-login" onclick="loginshow()">login</div>
+	</header>
+		<div class="mj-login" id="mj-login">
+			<center><div class="mj-login-tilte">welcom login</div></center><span onclick="loginclose()">X</span>
+			<div class="mj-login-content">
+				<div class="mj-login-input">
+					<label for="userName">username: <input type="userName" name="userName" id="mj-login-user"></label>
+				</div>
+				<div class="mj-login-input">
+					<label for="userPasw">password: <input type="userPasw" name="userPasw" id="mj-login-pasw"></label>
+				</div>
+			</div>
+			<div class="mj-login-button">
+				<button onclick="check()">submit</button><button onclick="pagechange()">register</button>
+			</div>
+		</div>
+		<div id="mj-hidden"></div>
+
+
+
+	    <div id="mj-regiter" class="mj-register">
+	        <div class="mj-reg-tit">
+	        		<h2>register</h2>
+	        </div>
+	        <div class="mj-reg-form">
+		        <label for="userName">username: <input type="text" name="userName" class="mj-reg-username" id="mj-reg-username" placeholder="please input your nickname" /></label>
+		        <form>
+		        <label for="userEmail">&nbsp&nbsp&nbspemail: &nbsp&nbsp&nbsp<input type="email" name="userEmail" class="mj-reg-useremail" placeholder="please inout your email" list="uemail" /></label>
+		        <datalist id="uemail">
+		        		<option value="@163.com" >
+		        		<option value="@sina.com">
+		        		<option value="@gmail.com" >
+		        		<option value="@foxmail.com" >
+		        </datalist>
+		        </form>
+		        <label for="userPasw">password: <input type="password" name="userPasw" class="mj-reg-userpasw1" placeholder="please input your password" /></label>
+		        <label for="userPasw">password: <input type="password" name="userPasw" class="mj-reg-userpasw1" placeholder="please confiem your password" /></label>
+	        </div>
+	        <div class="mj-reg-select">
+	        		<form>
+		        		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsex: 
+		        			<select>
+		        				<option value="1">man</option>
+		        				<option value="2" selected>woman</option>
+		        			</select>
+		        		</p>
+	        		</form>
+	        		<p>
+					born day:<input type="date" />
+	        		</p>
+	        		<button onclick="ajax()">submit</button>
+	        		<p id="searchResult"></p>
+	        </div>
+	    </div>
+        
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 </body>
 </html>

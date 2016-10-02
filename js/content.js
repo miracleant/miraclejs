@@ -40,7 +40,8 @@ var objArr=new Array("images/01.jpg","images/02.jpg","images/03.jpg","images/04.
     		imgArr[i].src=objArr[i];
     }
     	var i=0;
-     var play=setTimeout("change()",1000);
+        var t=0;
+     var play=setTimeout("change()",2000);
     function left(){
     		clearTimeout(play);
     		if(i==0){
@@ -48,9 +49,16 @@ var objArr=new Array("images/01.jpg","images/02.jpg","images/03.jpg","images/04.
     		}else{
     			i--;
     		}
-    		// console.log(i);
+    		 
+
     		document.getElementById('image').src=imgArr[i].src;
-    		var t=setTimeout("change()",5000);
+    		if(t){
+
+        }else{
+          setTimeout("change()",8000);  
+          t++;  
+        }
+        // console.log(i);
     }
     function right(){
     		clearTimeout(play);
@@ -59,9 +67,13 @@ var objArr=new Array("images/01.jpg","images/02.jpg","images/03.jpg","images/04.
     		}else{
     			i++;
     		}
-    		// console.log(i);
     		document.getElementById('image').src=imgArr[i].src;
-    		var t=setTimeout("change()",5000);
+        if(t){
+
+        }else{
+          setTimeout("change()",8000);  
+          t++;  
+        }
     }
     function change(){
     		if(i==3){
@@ -69,8 +81,9 @@ var objArr=new Array("images/01.jpg","images/02.jpg","images/03.jpg","images/04.
     		}else{
     			i++;
     		}
-            document.getElementById('image').src=imgArr[i].src;
-    		play=setTimeout("change()",1000);
+        document.getElementById('image').src=imgArr[i].src;
+        play=setTimeout("change()",2000);
+        t=0;
     }
    /*circle play end*/
 

@@ -4,7 +4,6 @@ function $(id){
 }
  var x=20;
  var y=20;
- // var pageReview=document.getElementById('mj-page-review');
  var imgs=$('mj-page-review').getElementsByTagName('li');
  console.log(imgs.length);
  for(var i=0;i<imgs.length;i++){
@@ -28,18 +27,13 @@ function $(id){
           div.setAttribute("id","mj-img-tip");
           parent.appendChild(div);
           var img=document.createElement('img');
-
-          // var aParent=document.getElementById("mj-page-tip"+i);
-          // href=lis[curIndex].getAttribute('value');
           img.setAttribute("src","pimages/P_0"+curIndex+".jpg");
           div.appendChild(img);
-           document.getElementById('mj-img-tip').style.position="relative";
+           document.getElementById('mj-img-tip').style.position="absolute";
            document.getElementById('mj-img-tip').style.width="200px";
            document.getElementById('mj-img-tip').style.height="200px";
-           document.getElementById('mj-img-tip').style.left=(e.pageX-700)+"px";
-           document.getElementById('mj-img-tip').style.top=(e.pageY-800)+"px";
-           /*document.getElementById('mj-img-tip').style.left=((curIndex/4)*20)+"px";
-           document.getElementById('mj-img-tip').style.top=((curIndex/6)*100)+"px";*/
+           document.getElementById('mj-img-tip').style.left=(e.pageX-450)+"px";
+           document.getElementById('mj-img-tip').style.top=(e.pageY)+"px";
            document.getElementById('mj-img-tip').style.display="block";
       }
         reviewcancle=function(){

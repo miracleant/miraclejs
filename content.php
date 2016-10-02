@@ -1,3 +1,4 @@
+<a name="sidebar" />
 <div id="mj-content">
 	<div class="mj-content-left">
 		<div class="mj-list">
@@ -18,9 +19,8 @@
 			</ul>
 		</div>
 
-
+        <a name="mj-marquee">
 		<div class="mj-marquee" id="mj-marquee" ><a name="mj-mqrquee" />
-			<!-- <marquee direction="up" > -->
 			<ul id="mj-content-1">
 				<li class="mj-marquee-cont">
 					<p>1</p>
@@ -55,7 +55,6 @@
 			</ul>
 			<ul id="mj-content-2">
 			</ul>
-			<!-- </marquee> -->
 		</div>	
 	</div>
 	
@@ -67,7 +66,7 @@
 			<button id="left" class="left" onclick="left()"><img src="images/left.png"></button>
 			<button id="right" class="right" onclick="right()"><img src="images/right.png"></button>
 		</div>
-
+        <a name="mj-tab-menu">
 		<div class="mj-list-menu">
 			<div id="mj-list-tit" class="mj-list-tit">
 				<ul>
@@ -122,7 +121,7 @@
 			</div>
 		</div>
 
-
+        <a name="mj-img-review">
 		<div class="mj-page-review" id="mj-page-review">
 			<li value="pimages/P_00.jpg"><img src="pimages/P_00.jpg" /></li>
 			<li value="pimages/P_01.jpg"><img src="pimages/P_01.jpg" /></li>
@@ -140,15 +139,17 @@
 	</div>
 
 	<div class="mj-content-bottom">
-		<div class="mj-video-play" id="mj-video-play">
-			<div>
+		<div class="mj-video-play" id="mj-video-play">	
 				<video controls>
-					<source src="video/1.avi">
+					<source src="video/1.ogv">
 				</video>
 			<div class="mj-ui-plya"><span></span></div>
-			</div>
 		</div>
-		<div class="mj-canvas"></div>
+
+		<div class="mj-canvas">
+			<canvas id="beijing" width="300" height="400">您的浏览器不支持canvas。</canvas>
+			<canvas id="feiji" width="300" height="400">您的浏览器不支持canvas。</canvas>
+		</div>
 	</div>
 
 
